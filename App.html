@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Notas por Disciplina</title>
+  <link rel="stylesheet" href="App.css">
+</head>
+<script src="App.js"></script>
+<body>
+    <header>
+        <div class="header">
+            <h1>CNI</h1>
+            <a href="src/Notas.html">Notas</a>
+            <p><a href="src/home/Home.html">Home</a></p>
+        </div>
+    </header>
+  <h1 class="show">Lançamento de Notas</h1>
+
+  <form id="notaForm">
+    <fieldset>
+        <legend>Trimestre</legend>
+        <label for="trimestre">Trimestre:</label>
+        <select id="trimestre">
+            <option value="1">1º Trimestre</option>
+            <option value="2">2º Trimestre</option>
+            <option value="3">3º Trimestre</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Disciplina</legend>
+        <label for="disciplina">Disciplina:</label>
+        <select id="disciplina">
+          <option value="matematica">Matemática</option>
+          <option value="portugues">Português</option>
+          <option value="historia">História</option>
+          <option value="ciencias">Ciências</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+    <legend>Notas</legend>
+        <label for="escrita">Escrita (0-3):</label>
+        <input type="number" id="escrita" step="0.1" min="0" max="3" />
+
+        <label for="pratica">Prática (0-2):</label>
+        <input type="number" id="pratica" step="0.1" min="0" max="2" />
+
+        <label for="participacao">Participação (0-2):</label>
+        <input type="number" id="participacao" step="0.1" min="0" max="2" />
+
+        <label for="simulado">Simulado (0-3):</label>
+        <input type="number" id="simulado" step="0.1" min="0" max="3" />
+
+    </fieldset>
+
+    <p id="total">Total: 0.0 / 10</p>
+
+    <button type="submit">Salvar Notas</button>
+    <button type="button" onclick="limparTodasNotas()">Limpar Todas</button>
+  </form>
+
+  <div class="show">
+    <section id="msg"></section>
+
+    <h2>Histórico de Notas</h2>
+    <ul id="historicoBody"></ul>
+  </div>
+</body>
+</html>

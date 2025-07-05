@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <link rel="stylesheet" href="Notas.css">
+</head>
+<script src="Notas.js"></script>
+<body>
+    <header>
+        <div class="header">
+            <h1>CNI</h1>
+            <a href="../App.html">Salvar/Editar Notas</a>
+            <p><a href="home/Home.html">Home</a></p>
+        </div>
+    </header>
+
+    <h1>Historico de Notas</h1>
+    <div class="filter">
+        <p>Filtro:</p>
+        <select id="trimestre">
+            <option value="0" selected>Sem Filtro</option>
+            <option value="1">1º Trimestre</option>
+            <option value="2">2º Trimestre</option>
+            <option value="3">3º Trimestre</option>
+        </select>
+        <select id="disciplina">
+            <option value="none" selected>Sem Filtro</option>
+            <option value="matematica">Matemática</option>
+            <option value="portugues">Português</option>
+            <option value="historia">História</option>
+            <option value="ciencias">Ciências</option>
+        </select>
+    </div>
+    <ul id="notas"></ul>
+</body>
+</html>
