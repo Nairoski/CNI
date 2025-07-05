@@ -1,1 +1,1 @@
-Start the project from Home.html (src/home/Home.html)
+Projeto de Cadastro de Notas Individual para Eletiva
